@@ -2,6 +2,9 @@ html, body, header {
   margin: 0 auto;
 }
 
+
+/*header and nav*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +24,6 @@ header {
   align-items: center;
   flex-grow: 0;
   padding: 5px 5px 5px 20px;
-  border: 1px solid black;
 }
 
 #logo span {
@@ -40,15 +42,20 @@ nav span {
   padding: 10px 20px;
 }
 
+
+/*main content section*/
+
 .main {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  border: 1px solid black;
   margin: 20px auto 0;
   width: 100%;
 }
+
+
+/*sets attributes for the text for the articles*/
 
 .story-text {
   font-family: Georgia;
@@ -57,12 +64,18 @@ nav span {
   padding: 20px 0;
 }
 
+
+/*for the h1 in all the image divs*/
+
 .image-text {
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
 }
+
+
+/*attributes for the large first column div*/
 
 .column-large {
   display: flex;
@@ -75,7 +88,6 @@ nav span {
 }
 
 .column-large-image {
-  border: 2px solid black;
   display: flex;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
   background-repeat: no-repeat;
@@ -91,9 +103,8 @@ nav span {
   color: white;
 }
 
-.large-par {
-  border: 1px solid black;
-}
+
+/*sets the orientaion and flex flow of the divs that are next to eachother in the large div*/
 
 .large-two-container {
   display: flex;
@@ -111,10 +122,12 @@ nav span {
 
 .story-image-div {
   display: flex;
-  border: 1px solid black;
   flex-basis: 1;
   height: 300px;
 }
+
+
+/*sets attributes for the div that will be left*/
 
 #left {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
@@ -123,6 +136,9 @@ nav span {
   background-size: cover;
 }
 
+
+/*sets attributes for the div that will be left*/
+
 #right {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
   background-repeat: no-repeat;
@@ -130,34 +146,36 @@ nav span {
   background-size: cover;
 }
 
+
+/*attributes for the second medium sized column div*/
+
 .column-medium {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
   display: flex;
   width: 300px;
 }
 
-.medium-two {
-  border: 2px solid black;
-}
+
+/*specific id for the div with the cat image*/
 
 #cat {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
 }
 
+
+/*attributes for the small third column div*/
+
 .column-small {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   display: flex;
   width: 240px;
 }
 
-.column-small-article {
-  border: 1px solid black;
-}
+
+/*sets attributes for the ul that is in the div*/
 
 .column-small-article ul {
   list-style-type: none;
@@ -168,7 +186,6 @@ nav span {
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-  border: 1px dotted black;
 }
 
 .column-small-article ul li {
@@ -180,9 +197,3 @@ h2 {
   font-size: 16px;
   font-weight: bold
 }
-
-
-/*.column-small img {
-  width: 100%;
-  height: auto;
-}*/
