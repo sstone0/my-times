@@ -6,16 +6,19 @@ html, body, header {
 /*header and nav*/
 
 header {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 69px;
+  font-weight: bold;
   width: 100%;
   font-family: Verdana;
   font-size: 14px;
-  font-weight: bold;
   border-bottom: 1px solid black;
   margin: 0 auto;
+  position: fixed;
+  z-index: 20;
 }
 
 #logo {
@@ -47,10 +50,12 @@ nav span {
 
 .main {
   position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin: 20px auto 0;
+  margin: 40 auto;
+  top: 75px;
   width: 100%;
 }
 
@@ -209,7 +214,7 @@ footer {
   width: 100%;
   height: 300px;
   background-color: MediumAquamarine;
-  margin: 40px auto 0;
+  margin: 100px auto 0;
   font-family: Verdana;
   font-size: 12px;
 }
